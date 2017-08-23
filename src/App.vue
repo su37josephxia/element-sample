@@ -1,19 +1,21 @@
 <template>
-        <el-tabs v-model="activeName" @tab-click="handleClick">
-            <el-tab-pane label="选择数据" name="selector">
-                <selector></selector>
-            </el-tab-pane>
-            <el-tab-pane label="处理数据" name="process">
-                <process></process>
-            </el-tab-pane>
-            <el-tab-pane label="数据可视化" name="viz">
-                <viz></viz>
-            </el-tab-pane>
 
-            <el-tab-pane label="分享" name="share">
-                <share></share>
-            </el-tab-pane>
-        </el-tabs>
+    <el-tabs v-model="activeName" @tab-click="handleClick">
+
+        <el-tab-pane label="选择数据" name="selector">
+                <selector></selector>
+        </el-tab-pane>
+        <el-tab-pane label="处理数据" name="process">
+            <process></process>
+        </el-tab-pane>
+        <el-tab-pane label="数据可视化" name="viz">
+            <viz></viz>
+        </el-tab-pane>
+
+        <el-tab-pane label="分享" name="share">
+            <share></share>
+        </el-tab-pane>
+    </el-tabs>
 
 </template>
 
@@ -45,7 +47,7 @@
             }
         },
         components: {
-            Selector,Process,Viz,Share
+            Selector, Process, Viz, Share
         }
 
     }
