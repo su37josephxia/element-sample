@@ -37,14 +37,15 @@
 
         </el-col>
 
-        <el-col :span="21">
-
+        <el-col :span="18">
+            <hight-chart></hight-chart>
 
         </el-col>
     </div>
 </template>
 
 <script>
+    import HightChart from './HightChart.vue'
     export default {
         name: 'viz',
         data () {
@@ -72,7 +73,7 @@
         created: function () {
             console.log('created....', this.msg)
         },
-        components: {}
+        components: {HightChart}
     }
 </script>
 

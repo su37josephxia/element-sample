@@ -33,12 +33,14 @@
             </el-row>
         </el-col>
         <el-col :span="12">
+            <hight-chart></hight-chart>
 
         </el-col>
     </div>
 </template>
 
 <script>
+    import HightChart from './HightChart.vue'
     export default {
         name: 'share',
         data () {
@@ -69,7 +71,7 @@
         created: function () {
             console.log('created....', this.msg)
         },
-        components: {}
+        components: {HightChart}
     }
 </script>
 

@@ -2,9 +2,9 @@
     <div class="table">
         <el-table
                   :data="tableData3"
-                  height="500"
                   border
-                  style="width: 100%">
+                  style="width: 100%"
+                  max-height="500">
             <el-table-column
                     prop="date"
                     label="日期">
